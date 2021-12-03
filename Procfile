@@ -1,4 +1,4 @@
-web: gunicorn financebackendx.wsgi
+web: gunicorn financebackend.wsgi
 release: python manage.py makemigrations --noinput
 release: python manage.py collectstatic --noinput
 release: python manage.py migrate --noinput
